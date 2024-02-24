@@ -1,8 +1,8 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 <body>
     <h1>PetFax</h1>
+    <p class="section">Welcome to Petfax! We are a no-kill shelter dedicated to finding our pets loving homes and educating the public with fun facts.</p>
     <div class="index_container">
-        <p class="section">Welcome to Petfax! We are a no-kill shelter dedicated to finding our pets loving homes and educating the public with fun facts.</p>
     {% for pet in pets %}
         <div class="pet_container">
             <h2>{{ pet.pet_name }}</h2>
