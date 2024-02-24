@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<body>
+    <div class="fact_container">
+        <h1>{{pet.pet_name}}</h1>
+        <div class="section">
+            <p>Did you know?</p>
+           <p> {{pet.pet_fact}}</p>
+        </div>
+        <img class="image_class" src="{{pet.pet_photo}}" alt="{{pet.pet_name}}">
+        <p><a href="/pets">< Go back</a></p>
+    </div>
+</body>
