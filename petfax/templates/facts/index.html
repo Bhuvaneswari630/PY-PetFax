@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<body>
+    <div class="container">
+        <h1>UserFax</h1>
+        {% for fact in facts %}
+            <h4>Submitted by {{ fact.submitter }}</h4>
+            {{ fact.fact }}
+            <button type="submit">Delete</button>
+        {% endfor %}
+    </div>
+   
+    <p>We would love to learn more fun facts!!! <a href="/facts/new">Submit some more here </a></p>
+</body>

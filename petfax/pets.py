@@ -11,7 +11,7 @@ def index():
     pets = json.load(open('pets.json'))
     print(pets)
     return render_template(
-        'index.html',
+        'pets/index.html',
         pets=pets,
         title='This is Petfax'
     )
@@ -20,7 +20,7 @@ def index():
 def show_pet(index):
     pet = json.load(open('pets.json'))[index]
     return render_template(
-        'show_pet.html',
+        'pets/show_pet.html',
         pet=pet
     ) 
 
